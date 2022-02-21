@@ -1,5 +1,6 @@
 package com.example.lowlow_db.rest_api.summernote;
 
+import com.example.lowlow_db.rest_api.common.BaseTimeEntity;
 import com.example.lowlow_db.rest_api.common.FileDto;
 import com.example.lowlow_db.rest_api.common.Writer;
 import lombok.*;
@@ -19,7 +20,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @AllArgsConstructor @Builder
 @ToString @EqualsAndHashCode(of = "id")
-public class SummerNoteImg {
+public class SummerNoteImg extends BaseTimeEntity {
 
     @Id
     @GeneratedValue
