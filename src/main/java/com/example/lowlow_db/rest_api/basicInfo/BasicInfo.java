@@ -15,9 +15,9 @@ public class BasicInfo extends BaseTimeEntity {
     @Id @GeneratedValue
     private Integer id;
 
-    private String mainTitle;
+    private String basicInfo;
 
-    private String info;
+    private String detailInfo;
 
     private String name;
 
