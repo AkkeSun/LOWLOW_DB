@@ -23,7 +23,9 @@ public class BasicInfo extends BaseTimeEntity {
 
     private String senior_pastor_name;
 
-    private String address;
+    private String basicAddress;
+
+    private String detailAddress;
 
     private String callNumber;
 

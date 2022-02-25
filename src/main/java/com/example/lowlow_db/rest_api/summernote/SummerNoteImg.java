@@ -15,6 +15,7 @@ import javax.persistence.Id;
  * [ 서머노트 파일 업로드 entity ]
  *  image : 업로드 파일 이름
  *  writer : 작성자
+ *  BbsType : 게시판 타입 (Gallery, Notice)
  */
 @Entity @Getter @Setter
 @NoArgsConstructor
@@ -31,4 +32,6 @@ public class SummerNoteImg extends BaseTimeEntity {
 
     @Embedded
     private Writer writer;
+
+    private String BbsType;
 }
