@@ -13,6 +13,7 @@ import javax.persistence.*;
  * @Column
  * id 고유 식별자
  * title 제목
+ * weeklyDate 주보의 해당일
  * writer 작성자
  * img 주보 이미지
  */
@@ -25,6 +26,8 @@ public class Weekly extends BaseTimeEntity {
     private Integer id;
 
     private String title;
+
+    private String weeklyDate;
 
     @Embedded
     private Writer writer;
